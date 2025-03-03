@@ -9,7 +9,13 @@ function getInitials(arr) {
 };
 
 const getInitialsArrow = (arr) => {
-  return arr.map(i => i.charAt(0));
+  const result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    result.push(arr[i][0]);
+  };
+
+  return result;
 };
 
 // Invoca la funzione qui e stampa il risultato in console
