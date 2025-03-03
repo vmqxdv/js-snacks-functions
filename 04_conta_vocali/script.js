@@ -4,12 +4,17 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
-function getVowelsInWord(str) {
+function numOfVowelsInWord(str) {
+  return Array.from(str).filter(letter => 'aeiou'.includes(letter)).length;
+};
+
+const numOfVowelsInWordArrow = (str) => {
   return Array.from(str).filter(letter => 'aeiou'.includes(letter)).length;
 };
 
 // Invoca la funzione qui e stampa il risultato in console
-console.log(getVowelsInWord(word));
+console.log(numOfVowelsInWord(word));
 
+console.log(numOfVowelsInWordArrow(word));
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)
