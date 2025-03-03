@@ -16,8 +16,17 @@ function greetingBasedOnHour(str) {
   return hour <= 13 ? `Buongiorno ${str}` : hour <= 17 ? `Buon pomeriggio ${str}` : `Buonasera ${str}` 
 };
 
+const greetingBasedOnHourArrow = (str) => {
+  const now = new Date();
+  const hour = now.getHours();
+
+  return hour <= 13 ? `Buongiorno ${str}` : hour <= 17 ? `Buon pomeriggio ${str}` : `Buonasera ${str}` 
+};
+
 // Invoca la funzione qui e stampa il risultato in console
 console.log(greetingBasedOnHour(name));
+
+console.log(greetingBasedOnHourArrow(name));
 
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
