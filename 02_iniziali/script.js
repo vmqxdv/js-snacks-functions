@@ -8,8 +8,14 @@ function getInitials(arr) {
   return arr.map(i => i.charAt(0));
 };
 
+const getInitialsArrow = (arr) => {
+  return arr.map(i => i.charAt(0));
+};
+
 // Invoca la funzione qui e stampa il risultato in console
 console.log(getInitials(names));
+
+console.log(getInitialsArrow(names));
 
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
