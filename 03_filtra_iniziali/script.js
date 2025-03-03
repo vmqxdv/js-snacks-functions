@@ -9,7 +9,13 @@ function getStringThatStartsWith(arr, str) {
 };
 
 const getStringThatStartsWithArrow = (arr, str) => {
-  return arr.filter(i => i.startsWith(str));
+  const result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].startsWith(str)) result.push(arr[i]);
+  };
+
+  return result;
 };
 
 // Invoca la funzione qui e stampa il risultato in console
